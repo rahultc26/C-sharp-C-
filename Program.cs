@@ -4,37 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pal
+namespace prime
 {
-    class Palindrome
+    class Program
     {
         static void Main(string[] args)
         {
-            int rev = 0;
-            int n;
-            Console.WriteLine("enter the nums");
-             n=Convert.ToInt32(Console.ReadLine());
-       
-            int temp = n;
-            while (n != 0)
+            while (true)
             {
-                int x = n % 10;
-                n = n / 10;
-                rev = rev * 10 + x;
+                Console.WriteLine("enter the no.");
+                int n = Convert.ToInt32(Console.ReadLine());
+
+
+                if (n % 2 != 0)
+                    Console.WriteLine("prime");
+                else
+                    Console.WriteLine("not prime");
+                Console.ReadLine();
 
             }
-                if (temp == rev)
-                {
-                    Console.WriteLine("palindrome");
-                }
-                else
-                {
-                    Console.WriteLine("not a palindrome");
-
-                }
-            
-            Console.Read();
-            
         }
     }
 }
