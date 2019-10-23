@@ -10,10 +10,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-
-           
-
-           // Unboxing
+           // Unboxing example
             int num = 23;
             object obj = num;  //boxing
 
